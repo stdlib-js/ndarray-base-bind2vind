@@ -1,0 +1,4 @@
+// Copyright (c) 2023 The Stdlib Authors. License is Apache-2.0: http://www.apache.org/licenses/LICENSE-2.0
+/// <reference types="./mod.d.ts" />
+var r=Math.floor,n=Math.ceil;function t(t){return t<0?n(t):r(t)}function e(r){return Math.abs(r)}function o(r,n,o,a,f,i){var u,l,c,h,s,p;for(u=r.length,l=1,p=0;p<u;p++)l*=r[p];if("clamp"===i)f<0?f=0:f>=l&&(f=l-1);else if("wrap"===i)f<0?(f+=l)<0&&0!==(f%=l)&&(f+=l):f>=l&&(f-=l)>=l&&(f%=l);else if(f<0||f>=l)throw new RangeError(function(){var r,n=arguments,t="https://stdlib.io/e/"+n[0]+"?";for(r=1;r<n.length;r++)t+="&arg[]="+encodeURIComponent(n[r]);return t}("0Lw5S",l,f));if(c=0,"column-major"===a){for(p=u-1;p>=0;p--)(s=n[p])<0?(f-=(h=t(f/s))*s,h+=r[p]-1):f-=(h=t(f/s))*s,c+=h*e(s);return c}for(p=0;p<u;p++)(s=n[p])<0?(f-=(h=t(f/s))*s,h+=r[p]-1):f-=(h=t(f/s))*s,c+=h*e(s);return c}export{o as default};
+//# sourceMappingURL=mod.js.map
