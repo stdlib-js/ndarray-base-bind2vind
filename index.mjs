@@ -1,4 +1,0 @@
-// Copyright (c) 2023 The Stdlib Authors. License is Apache-2.0: http://www.apache.org/licenses/LICENSE-2.0
-/// <reference types="./index.d.ts" />
-import r from"https://cdn.jsdelivr.net/gh/stdlib-js/error-tools-fmtprodmsg@v0.1.0-esm/index.mjs";import e from"https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-trunc@v0.1.0-esm/index.mjs";import s from"https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-abs@v0.1.0-esm/index.mjs";function t(t,i,m,o,n,l){var a,d,f,p,h,j;for(a=t.length,d=1,j=0;j<a;j++)d*=t[j];if("clamp"===l)n<0?n=0:n>=d&&(n=d-1);else if("wrap"===l)n<0?(n+=d)<0&&0!==(n%=d)&&(n+=d):n>=d&&(n-=d)>=d&&(n%=d);else if(n<0||n>=d)throw new RangeError(r("0i35E,L1",d,n));if(f=0,"column-major"===o){for(j=a-1;j>=0;j--)(h=i[j])<0?(n-=(p=e(n/h))*h,p+=t[j]-1):n-=(p=e(n/h))*h,f+=p*s(h);return f}for(j=0;j<a;j++)(h=i[j])<0?(n-=(p=e(n/h))*h,p+=t[j]-1):n-=(p=e(n/h))*h,f+=p*s(h);return f}export{t as default};
-//# sourceMappingURL=index.mjs.map
