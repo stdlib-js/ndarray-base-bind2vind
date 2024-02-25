@@ -54,6 +54,11 @@ limitations under the License.
 To use in Observable,
 
 ```javascript
+bind2vind = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-bind2vind@umd/browser.js' )
+```
+The previous example will load the latest bundled code from the umd branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/ndarray-base-bind2vind/tags). For example,
+
+```javascript
 bind2vind = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-bind2vind@v0.2.1-umd/browser.js' )
 ```
 
@@ -66,7 +71,7 @@ var bind2vind = require( 'path/to/vendor/umd/ndarray-base-bind2vind/index.js' )
 To include the bundle in a webpage,
 
 ```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-bind2vind@v0.2.1-umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-bind2vind@umd/browser.js"></script>
 ```
 
 If no recognized module system is present, access bundle contents via the global scope:
@@ -153,7 +158,7 @@ var idx = bind2vind( shape, strides, offset, order, 2, 'throw' );
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-strides2offset@umd/browser.js"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-numel@umd/browser.js"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-bind2vind@v0.2.1-umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-bind2vind@umd/browser.js"></script>
 <script type="text/javascript">
 (function () {
 
