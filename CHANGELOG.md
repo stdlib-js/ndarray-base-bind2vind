@@ -4,7 +4,19 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-08-18)
+## Unreleased (2025-10-30)
+
+<section class="issues">
+
+### Closed Issues
+
+This release closes the following issue:
+
+[#8308](https://github.com/stdlib-js/stdlib/issues/8308)
+
+</section>
+
+<!-- /.issues -->
 
 <section class="commits">
 
@@ -12,6 +24,7 @@
 
 <details>
 
+-   [`4b9391c`](https://github.com/stdlib-js/stdlib/commit/4b9391cd318c753562d9c670fe2946e012fb15cb) - **chore:** fix C lint errors [(#8309)](https://github.com/stdlib-js/stdlib/pull/8309) _(by Navyansh Kesarwani, Athan Reines)_
 -   [`6eee151`](https://github.com/stdlib-js/stdlib/commit/6eee15199727d04e3757e66f38384e97b8a333da) - **style:** fix indentation in JSON files _(by Philipp Burckhardt)_
 -   [`f84a4f9`](https://github.com/stdlib-js/stdlib/commit/f84a4f981f22b7ac35f917941264e792f4ba854b) - **refactor:** use base assertion utility _(by Athan Reines)_
 
@@ -25,9 +38,10 @@
 
 ### Contributors
 
-A total of 2 people contributed to this release. Thank you to the following contributors:
+A total of 3 people contributed to this release. Thank you to the following contributors:
 
 -   Athan Reines
+-   Navyansh Kesarwani
 -   Philipp Burckhardt
 
 </section>
