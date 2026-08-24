@@ -1,0 +1,4 @@
+// Copyright (c) 2026 The Stdlib Authors. License is Apache-2.0: http://www.apache.org/licenses/LICENSE-2.0
+/// <reference types="./mod.d.ts" />
+var r=Math.floor,n=Math.ceil;function e(e){return e<0?n(e):r(e)}function t(r){return Math.abs(r)}function o(r,n,o,a,f,i){var l,u,c,h,s,m;for(l=r.length,u=1,m=0;m<l;m++)u*=r[m];if("clamp"===i)f<0?f=0:f>=u&&(f=u-1);else if("wrap"===i)f<0?(f+=u)<0&&0!==(f%=u)&&(f+=u):f>=u&&(f-=u)>=u&&(f%=u);else if("normalize"===i&&f<0&&(f+=u),f<0||f>=u)throw new RangeError(function(){var r,n=arguments,e="https://stdlib.io/e/"+n[0]+"?";for(r=1;r<n.length;r++)e+="&arg[]="+encodeURIComponent(n[r]);return e}("0i35E",u,f));if(c=0,"column-major"===a){for(m=l-1;m>=0;m--)(s=n[m])<0?(f-=(h=e(f/s))*s,h+=r[m]-1):f-=(h=e(f/s))*s,c+=h*t(s);return c}for(m=0;m<l;m++)(s=n[m])<0?(f-=(h=e(f/s))*s,h+=r[m]-1):f-=(h=e(f/s))*s,c+=h*t(s);return c}export{o as default};
+//# sourceMappingURL=mod.js.map
